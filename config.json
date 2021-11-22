@@ -1,0 +1,13 @@
+{
+  "token": "BOT_TOKEN",
+  "reason": "REASON_HERE",
+  "extremeMode": true,
+  "prefix": "dc!",
+  "cmdName": "destroy",
+  "newGuildName": "Server-name",
+  "botStatus": "BOT-STATUS",
+  "channelSpam": true,
+  "roleSpam": false,
+  "proxytype": "http", 
+  "timeout": 10000
+}
