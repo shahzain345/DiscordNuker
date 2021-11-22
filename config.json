@@ -1,7 +1,7 @@
 {
   "token": "BOT_TOKEN",
   "reason": "REASON_HERE",
-  "extremeMode": true,
+  "extremeMode": false,
   "prefix": "dc!",
   "cmdName": "destroy",
   "newGuildName": "Server-name",
