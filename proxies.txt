@@ -1,1 +1,1 @@
-ur proxies here
+ur proxies here (proxy format(Username and password proxies) = username:password@ip:port | proxy format(No authentication proxies) = ip:port) 
