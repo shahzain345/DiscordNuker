@@ -13,10 +13,12 @@ client.login(config.token);
 setTimeout(() => {
   console.log('[$] If the bot does not start up within 30 seconds that means you have been rate limited!\nTry Using a vpn in that case!')
   console.log('[$] Please do not use extreme mode without good proxies!')
+  console.log(`[$] Bot link: https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8`)
   config.extremeMode ? console.log(`\x1b[34m[$] Extreme Mode ON!`) : console.log('\x1b[32m[$] Extreme Mode OFF!')
+  config.extremeMode ? console.log('\x1B[31m[?] Warning: Extreme mode is not very stable so if you prefer stability over speed use normal mode!'): null;
 }, 3000)
 client.on('ready', () => {
-  console.log(`${client.user.tag} is ready to destroy servers hehe!`);
+  console.log(`[$] ${client.user.tag} is ready to destroy servers!`);
   client.user.setActivity(config.botStatus, {
     type: "LISTENING"
   });
