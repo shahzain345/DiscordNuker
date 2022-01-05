@@ -82,45 +82,6 @@ const getRandProxy = () => {
 })
 }
 
-/*const sendMessage = (channel, proxy) => {
-let reqbody = {
-    content: `@everyone ${config.reason}`,
-    tts: false
- }
- if ( !proxy ) { 
-    fetch(`https://discord.com/api/v9/channels/${channel.id}/messages`, {
-        method: "POST",
-        body: JSON.stringify(reqbody),
-        headers: {
-          "Authorization": `Bot ${client.token}`,
-          "content-type": "application/json"
-        }
-      }).then(async data => {
-          if (data.status === 200) {
-              return;
-          }
-          let newProxyOk = await getRandProxy()
-          sendMessage(channel, newProxyOk)
-      })
-    return;
- }
- const proxyAgent = new HttpsProxyAgent(`${config.proxytype}://${proxy}`);
- fetch(`https://discord.com/api/v9/channels/${channel.id}/messages`, {
-    method: "POST",
-    body: JSON.stringify(reqbody),
-    headers: {
-      "Authorization": `Bot ${client.token}`,
-      "content-type": "application/json"
-    },
-    agent: proxyAgent
-  }).then(async data => {
-      if (data.status === 200) {
-          return;
-      }
-      sendMessage(channel, (await getRandProxy()))
-  })
-}*/
-
 client.on('message', async (message) => {
   const normalColor = "\x1b[32m"
   const extremeColor = "\x1b[34m"
